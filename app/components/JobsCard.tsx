@@ -1,8 +1,6 @@
 import { JobCard } from "./JobCard";
 const getJobs = async () => {
-  const res = await fetch(
-    "https://devjobs-gu1b3zsgv-kcabsiemaneht.vercel.app/api/jobs"
-  );
+  const res = await fetch("https://devjobs-sepia.vercel.app/api/jobs");
   const data = await res.json();
   return data;
 };

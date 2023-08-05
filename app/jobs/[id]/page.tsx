@@ -1,7 +1,5 @@
 const getUser = async (id: any) => {
-  const res = await fetch(
-    `https://devjobs-gu1b3zsgv-kcabsiemaneht.vercel.app/api/jobs?id=${id}`
-  );
+  const res = await fetch(`https://devjobs-sepia.vercel.app/api/jobs?id=${id}`);
   const data = await res.json();
   return data;
 };
