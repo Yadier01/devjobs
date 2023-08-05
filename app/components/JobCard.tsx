@@ -26,7 +26,12 @@ export const JobCard = ({
           key={id}
           className="bg-white m-4 rounded-lg text-black flex flex-col gap-4 p-8"
         >
-          <img src={logo} alt="" className="w-12" />
+          <img
+            src={logo}
+            alt=""
+            className="w-20  yellow-500
+          "
+          />
           <div className="flex flex-col gap-4">
             <div className="flex gap-4 text-gray-400 ">
               <p>{postedAt}</p>
