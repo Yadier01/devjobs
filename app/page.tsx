@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { JobsCard } from "./components/JobsCard";
 
 export default function Home() {
