@@ -1,6 +1,6 @@
 import { JobCard } from "./JobCard";
 const getJobs = async () => {
-  const res = await fetch("http://localhost:3000/api/jobs");
+  const res = await fetch("/api/jobs");
   const data = await res.json();
   return data;
 };
