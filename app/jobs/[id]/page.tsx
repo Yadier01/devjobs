@@ -1,11 +1,12 @@
-// const getUser = async (id: any) => {
-//   const res = await fetch(`/api/jobs?id=${id}`);
-//   const data = await res.json();
-//   return data;
-// };
-import data from "../../data.json";
+const getUser = async (id: any) => {
+  const res = await fetch(
+    `https://devjobs-gu1b3zsgv-kcabsiemaneht.vercel.app/api/jobs?id=${id}`
+  );
+  const data = await res.json();
+  return data;
+};
 const page = async ({ params }: { params: { id: number } }) => {
-  // const data = await getUser(params.id);
+  const data = await getUser(params.id);
   return (
     <div>
       {data.map((j: any) => (
