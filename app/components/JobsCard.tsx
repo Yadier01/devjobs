@@ -1,13 +1,13 @@
 import { JobCard } from "./JobCard";
-const getJobs = async () => {
-  const res = await fetch("/api/jobs");
-  const data = await res.json();
-  return data;
-};
-
+// const getJobs = async () => {
+//   const res = await fetch("/api/jobs");
+//   const data = await res.json();
+//   return data;
+// };
+import data from "../data.json";
 export const JobsCard = async () => {
-  const data = await getJobs();
-  console.log(data);
+  // const data = await getJobs();
+  // console.log(data);
   return (
     <div className="w-full ">
       {data.map((jobs: any) => (
